@@ -17,6 +17,7 @@ public class Principal extends javax.swing.JFrame {
     /** Creates new form Principal */
     public Principal() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /** This method is called from within the constructor to
@@ -53,6 +54,8 @@ public class Principal extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         txtResultado = new javax.swing.JLabel();
         txtTempo = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        rSelection = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -193,11 +196,11 @@ public class Principal extends javax.swing.JFrame {
 
         rBubble.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         rBubble.setText("Bubble");
-        jPanel2.add(rBubble, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 77, -1));
+        jPanel2.add(rBubble, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 77, -1));
 
         rInsertion.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         rInsertion.setText("Insertion");
-        jPanel2.add(rInsertion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+        jPanel2.add(rInsertion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton2.setText("Ordenar");
@@ -218,6 +221,14 @@ public class Principal extends javax.swing.JFrame {
         txtTempo.setForeground(new java.awt.Color(255, 0, 0));
         txtTempo.setText("Tempo de Execução");
         jPanel2.add(txtTempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, -1, -1));
+
+        jRadioButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jRadioButton1.setText("Outro");
+        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+
+        rSelection.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rSelection.setText("Selection");
+        jPanel2.add(rSelection, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         jTabbedPane1.addTab("Ordenação", jPanel2);
 
@@ -244,43 +255,23 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:        
+        var txtVetor = this.txtValores.getText();
         
-        if (rBubble.isSelected()){
-        var valores = LerValores.LerNumeros(txtValores.getText());
-        var valoresInt = LerValores.ConverterEmInteiro(valores);
-        
-        var resultView = Ordenar.bubbleSort(valoresInt);
-        var resultado = "";
-        for (int i = 0; i < resultView.numeros.length; i++) {
-            if( i + 1 == resultView.numeros.length ){
-                resultado = resultado + resultView.numeros[i] + ".";
-                continue;
-            }
-            resultado = resultado + resultView.numeros[i] + ", ";
-        }
-        txtTempo.setText("Tempo " + resultView.getTempoExecucao()  + " ms");
-        txtResultado.setText(resultado);
+        if (this.rBubble.isSelected()){
+            var resultado = Ordenar.OrdenarPorBubbleSort(txtVetor);
+            this.txtResultado.setText(resultado.getNumeros());
         }
         
-        if(rInsertion.isSelected()){
-        var valores = LerValores.LerNumeros(txtValores.getText());
-        var valoresInt = LerValores.ConverterEmInteiro(valores);
-        
-        var resultView = Ordenar.insertionSort(valoresInt);
-        var resultado = "";
-        for (int i = 0; i < resultView.numeros.length; i++) {
-            if( i + 1 == resultView.numeros.length ){
-                resultado = resultado + resultView.numeros[i] + ".";
-                continue;
-            }
-            resultado = resultado + resultView.numeros[i] + ", ";
+        if (this.rInsertion.isSelected()){
+            var resultado = Ordenar.OrdenarPorInsertionSort(txtVetor);
+            this.txtResultado.setText(resultado.getNumeros());
         }
-        txtTempo.setText("Tempo " + resultView.getTempoExecucao()  + " ms");
-        txtResultado.setText(resultado);    
-        }
-
         
+        if (this.rSelection.isSelected()){
+            var resultado = Ordenar.OrdenarPorSelectionSort(txtVetor);
+            this.txtResultado.setText(resultado.getNumeros());
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 //Testtando git
     /**
@@ -333,12 +324,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JLabel lblResultado;
     private javax.swing.JRadioButton rBubble;
     private javax.swing.JRadioButton rInsertion;
+    private javax.swing.JRadioButton rSelection;
     private javax.swing.JTextField txtProcessamento;
     private javax.swing.JLabel txtResultado;
     private javax.swing.JLabel txtTempo;

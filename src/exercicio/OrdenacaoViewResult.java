@@ -11,14 +11,14 @@ package exercicio;
  */
 public class OrdenacaoViewResult {
     
-    int[] numeros;
+    String numeros;
     String tempoExecucao;
 
-    public int[] getNumeros() {
+    public String getNumeros() {
         return numeros;
     }
 
-    public void setNumeros(int[] numeros) {
+    public void setNumeros(String numeros) {
         this.numeros = numeros;
     }
 

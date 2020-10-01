@@ -28,4 +28,13 @@ public class LerValores {
         
         return vet;
     }
+    public static String[] ConverterEmString(int[] valores){
+        String vet[] = new String[valores.length];
+        
+        for (int i = 0; i < valores.length; i++) {
+            vet[i] = Integer.toString(valores[i]);
+        }
+        
+        return vet;
+    }
 }

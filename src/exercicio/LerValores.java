@@ -5,6 +5,8 @@
  */
 package exercicio;
 
+import java.util.Random;
+
 /**
  *
  * @author Eduardo Martiniano
@@ -36,5 +38,20 @@ public class LerValores {
         }
         
         return vet;
+    }
+    
+    public static String GerarValores(){
+        var numeros = new String();
+        Random gerador = new Random();
+        for (int i = 0; i < 20; i++) {
+            var novoNumero = gerador.nextInt(100);
+            if( i + 1 == 20){
+                numeros = numeros + Integer.toString(novoNumero) + "";
+                continue;
+            }
+            numeros = numeros + Integer.toString(novoNumero) + ",";
+        }
+        
+        return numeros;
     }
 }

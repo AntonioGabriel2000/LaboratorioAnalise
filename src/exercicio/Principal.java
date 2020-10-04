@@ -41,13 +41,18 @@ public class Principal extends javax.swing.JFrame {
         lblResultado = new javax.swing.JLabel();
         txtProcessamento = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtConjunto = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtBusca = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        lblIndice = new javax.swing.JLabel();
+        lblEncontrado = new javax.swing.JLabel();
+        rSequencial = new javax.swing.JRadioButton();
+        rBinario = new javax.swing.JRadioButton();
+        jButton4 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         txtValores = new javax.swing.JTextField();
@@ -63,129 +68,107 @@ public class Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Valor de N:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 35, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Complexidade: ");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 61, -1, -1));
+        jPanel1.add(txtValorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 35, 110, -1));
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Processamento: ");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 84, -1, -1));
 
-        lblResultado.setFont(new java.awt.Font("Calibri", 1, 20)); // NOI18N
+        lblResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblResultado.setForeground(new java.awt.Color(0, 153, 102));
+        jPanel1.add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 204, -1, -1));
+        jPanel1.add(txtProcessamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 84, 110, -1));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("2n^2");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 61, 55, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(txtProcessamento, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                            .addComponent(txtValorN)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addComponent(jButton1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(106, 106, 106)
-                        .addComponent(lblResultado)))
-                .addContainerGap(503, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtValorN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(txtProcessamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45)
-                .addComponent(jButton1)
-                .addGap(26, 26, 26)
-                .addComponent(lblResultado)
-                .addContainerGap(148, Short.MAX_VALUE))
-        );
+        jButton7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jButton7.setText("Limpar");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
 
         jTabbedPane1.addTab("Complexidade", jPanel1);
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setText("Conjunto de números: ");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 41, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtConjunto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPanel3.add(txtConjunto, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 31, 420, 30));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setText("Número que deseja buscar: ");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 72, -1, -1));
+        jPanel3.add(txtBusca, new org.netbeans.lib.awtextra.AbsoluteConstraints(214, 72, 79, -1));
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jButton3.setText("Buscar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, -1, -1));
 
-        jLabel9.setForeground(new java.awt.Color(255, 51, 0));
-        jLabel9.setText("Aqui vai aparecer o resultado");
+        lblIndice.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblIndice.setForeground(new java.awt.Color(0, 153, 102));
+        jPanel3.add(lblIndice, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, -1, -1));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(165, 165, 165)
-                        .addComponent(jButton3))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(125, 125, 125)
-                        .addComponent(jLabel9)))
-                .addContainerGap(467, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(61, 61, 61)
-                .addComponent(jButton3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel9)
-                .addContainerGap(138, Short.MAX_VALUE))
-        );
+        lblEncontrado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblEncontrado.setForeground(new java.awt.Color(0, 153, 102));
+        jPanel3.add(lblEncontrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, -1, -1));
+
+        rSequencial.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rSequencial.setText("Sequencial");
+        rSequencial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSequencialActionPerformed(evt);
+            }
+        });
+        jPanel3.add(rSequencial, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        rBinario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rBinario.setText("Binária");
+        rBinario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rBinarioActionPerformed(evt);
+            }
+        });
+        jPanel3.add(rBinario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+
+        jButton4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jButton4.setText("Limpar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, -1, -1));
 
         jTabbedPane1.addTab("Busca", jPanel3);
 
@@ -323,7 +306,47 @@ public class Principal extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         this.txtValores.setText("");
+        this.txtTempo.setText("");
+        this.txtResultado.setText("");
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       if(this.rSequencial.isSelected()){
+       var resultado = Busca.BuscaSequencial(LerValores.LerNumeros(txtConjunto.getText()), txtBusca.getText());       
+       this.lblIndice.setText("Indice: " + resultado.getIndice());
+       this.lblEncontrado.setText(resultado.getEncontrado());
+       }
+       if(this.rBinario.isSelected()){
+           var txtNumeros = LerValores.LerNumeros(txtConjunto.getText());
+           var intNumeros = LerValores.ConverterEmInteiro(txtNumeros);
+           var numerosOrdenados = Ordenar.CountingSort(intNumeros);
+           var encontrado = Busca.BuscaBinaria(numerosOrdenados, Integer.parseInt(txtBusca.getText()));
+           this.lblEncontrado.setText(Integer.toString(encontrado));
+       }
+    }//GEN-LAST:event_jButton3ActionPerformed
+ 
+    private void rSequencialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSequencialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSequencialActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        this.txtConjunto.setText("");
+        this.txtBusca.setText("");
+        this.lblEncontrado.setText("");
+        this.lblIndice.setText("");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        this.txtValorN.setText("");
+        this.txtProcessamento.setText("");
+        this.lblResultado.setText("");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void rBinarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rBinarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rBinarioActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -331,8 +354,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -340,18 +365,21 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JLabel lblEncontrado;
+    private javax.swing.JLabel lblIndice;
     private javax.swing.JLabel lblResultado;
+    private javax.swing.JRadioButton rBinario;
     private javax.swing.JRadioButton rBubble;
     private javax.swing.JRadioButton rCountingSort;
     private javax.swing.JRadioButton rInsertion;
     private javax.swing.JRadioButton rSelection;
+    private javax.swing.JRadioButton rSequencial;
+    private javax.swing.JTextField txtBusca;
+    private javax.swing.JTextField txtConjunto;
     private javax.swing.JTextField txtProcessamento;
     private javax.swing.JLabel txtResultado;
     private javax.swing.JLabel txtTempo;

@@ -66,7 +66,6 @@ public class Principal extends javax.swing.JFrame {
         lblResultado = new javax.swing.JLabel();
         txtProcessamento = new javax.swing.JTextField();
         jButton7 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -240,7 +239,7 @@ public class Principal extends javax.swing.JFrame {
 
         lblResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblResultado.setForeground(new java.awt.Color(0, 153, 102));
-        jPanel1.add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 204, -1, -1));
+        jPanel1.add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 60, 30));
 
         txtProcessamento.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jPanel1.add(txtProcessamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 110, 30));
@@ -253,9 +252,6 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 120, 40));
-
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 110, 30));
 
         jTabbedPane1.addTab("Complexidade", jPanel1);
 
@@ -402,7 +398,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblEncontrado;
     private javax.swing.JLabel lblResultado;
     private javax.swing.JLabel lblVetor;

@@ -10,23 +10,14 @@ package exercicio;
  * @author Biel
  */
 public class BuscaViewResult {
-    String encontrado = "Não foi encontrado"; 
-    String indice = "";
+    String resultado = null;
 
-    public String getEncontrado() {
-        return encontrado;
+    public String getResultado() {
+        return resultado;
     }
 
-    public void setEncontrado(String encontrado) {
-        this.encontrado = encontrado;
-    }    
-
-    public String getIndice() {
-        return indice;
-    }
-
-    public void setIndice(String indice) {
-        this.indice = indice;
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
     
     

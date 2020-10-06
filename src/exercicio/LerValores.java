@@ -40,6 +40,19 @@ public class LerValores {
         return vet;
     }
     
+    public static String ConverterVetorEmString(String[] valores){
+        var vetorString = "";
+        
+        for (int i = 0; i < valores.length; i++) {
+            if (i + 1 == valores.length){
+                vetorString = vetorString + valores[i] + "";
+                continue;
+            }
+            vetorString = vetorString + valores[i] + ", ";
+        }
+        return vetorString;
+    }
+    
     public static String GerarValores(){
         var numeros = new String();
         Random gerador = new Random();

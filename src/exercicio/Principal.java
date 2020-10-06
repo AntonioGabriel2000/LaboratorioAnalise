@@ -31,28 +31,8 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        txtValorN = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        lblResultado = new javax.swing.JLabel();
-        txtProcessamento = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        txtConjunto = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        txtBusca = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        lblIndice = new javax.swing.JLabel();
-        lblEncontrado = new javax.swing.JLabel();
-        rSequencial = new javax.swing.JRadioButton();
-        rBinario = new javax.swing.JRadioButton();
-        jButton4 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         txtValores = new javax.swing.JTextField();
@@ -65,112 +45,30 @@ public class Principal extends javax.swing.JFrame {
         rSelection = new javax.swing.JRadioButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        txtConjunto = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtBusca = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        rSequencial = new javax.swing.JRadioButton();
+        rBinario = new javax.swing.JRadioButton();
+        jButton4 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        lblVetor = new javax.swing.JLabel();
+        lblEncontrado = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtValorN = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
+        txtProcessamento = new javax.swing.JTextField();
+        jButton7 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setText("Valor de N:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 35, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Complexidade: ");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 61, -1, -1));
-        jPanel1.add(txtValorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 35, 110, -1));
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jButton1.setText("Calcular");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("Processamento: ");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 84, -1, -1));
-
-        lblResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblResultado.setForeground(new java.awt.Color(0, 153, 102));
-        jPanel1.add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 204, -1, -1));
-        jPanel1.add(txtProcessamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 84, 110, -1));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("2n^2");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 61, 55, -1));
-
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jButton7.setText("Limpar");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
-
-        jTabbedPane1.addTab("Complexidade", jPanel1);
-
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setText("Conjunto de números: ");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 41, -1, -1));
-
-        txtConjunto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jPanel3.add(txtConjunto, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 31, 420, 30));
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setText("Número que deseja buscar: ");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 72, -1, -1));
-        jPanel3.add(txtBusca, new org.netbeans.lib.awtextra.AbsoluteConstraints(214, 72, 79, -1));
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jButton3.setText("Buscar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, -1, -1));
-
-        lblIndice.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblIndice.setForeground(new java.awt.Color(0, 153, 102));
-        jPanel3.add(lblIndice, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, -1, -1));
-
-        lblEncontrado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblEncontrado.setForeground(new java.awt.Color(0, 153, 102));
-        jPanel3.add(lblEncontrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, -1, -1));
-
-        rSequencial.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        rSequencial.setText("Sequencial");
-        rSequencial.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSequencialActionPerformed(evt);
-            }
-        });
-        jPanel3.add(rSequencial, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
-
-        rBinario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        rBinario.setText("Binária");
-        rBinario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rBinarioActionPerformed(evt);
-            }
-        });
-        jPanel3.add(rBinario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
-
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jButton4.setText("Limpar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, -1, -1));
-
-        jTabbedPane1.addTab("Busca", jPanel3);
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -237,9 +135,129 @@ public class Principal extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 100, 40));
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, 100, 40));
 
         jTabbedPane1.addTab("Ordenação", jPanel2);
+
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setText("Conjunto de números: ");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 41, -1, -1));
+
+        txtConjunto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPanel3.add(txtConjunto, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 31, 420, 30));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setText("Buscar número");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 72, -1, -1));
+        jPanel3.add(txtBusca, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 70, 30));
+
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jButton3.setText("Buscar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 90, 40));
+
+        buttonGroup2.add(rSequencial);
+        rSequencial.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rSequencial.setText("Sequencial");
+        rSequencial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSequencialActionPerformed(evt);
+            }
+        });
+        jPanel3.add(rSequencial, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        buttonGroup2.add(rBinario);
+        rBinario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rBinario.setText("Binária");
+        rBinario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rBinarioActionPerformed(evt);
+            }
+        });
+        jPanel3.add(rBinario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+
+        jButton4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jButton4.setText("Limpar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 90, 40));
+
+        jButton8.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jButton8.setText("Gerar");
+        jButton8.setToolTipText("");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 90, 40));
+
+        lblVetor.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        lblVetor.setForeground(new java.awt.Color(0, 153, 102));
+        lblVetor.setText("[ ]");
+        jPanel3.add(lblVetor, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 640, -1));
+
+        lblEncontrado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblEncontrado.setForeground(new java.awt.Color(0, 153, 102));
+        jPanel3.add(lblEncontrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 430, 30));
+
+        jTabbedPane1.addTab("Busca", jPanel3);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setText("Valor de N:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 35, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setText("Complexidade: ");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
+
+        txtValorN.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPanel1.add(txtValorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 110, 30));
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jButton1.setText("Calcular");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 120, 40));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setText("Processamento: ");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+
+        lblResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblResultado.setForeground(new java.awt.Color(0, 153, 102));
+        jPanel1.add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 204, -1, -1));
+
+        txtProcessamento.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPanel1.add(txtProcessamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 110, 30));
+
+        jButton7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jButton7.setText("Limpar");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 120, 40));
+
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 110, 30));
+
+        jTabbedPane1.addTab("Complexidade", jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -311,18 +329,27 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       if(this.txtConjunto.getText() == null || !this.rBinario.isSelected() && !this.rSequencial.isSelected()){
+           JOptionPane.showMessageDialog(null, "Erro!");
+       }else{
+           
        if(this.rSequencial.isSelected()){
-       var resultado = Busca.BuscaSequencial(LerValores.LerNumeros(txtConjunto.getText()), txtBusca.getText());       
-       this.lblIndice.setText("Indice: " + resultado.getIndice());
-       this.lblEncontrado.setText(resultado.getEncontrado());
+           var resultado = Busca.BuscaSequencial(LerValores.LerNumeros(txtConjunto.getText()), txtBusca.getText());       
+           this.lblEncontrado.setText(resultado.resultado);
        }
        if(this.rBinario.isSelected()){
+           this.lblEncontrado.setText("Valor não encontrado");
            var txtNumeros = LerValores.LerNumeros(txtConjunto.getText());
            var intNumeros = LerValores.ConverterEmInteiro(txtNumeros);
            var numerosOrdenados = Ordenar.CountingSort(intNumeros);
+           this.lblVetor.setText("[ " + LerValores.ConverterVetorEmString(LerValores.ConverterEmString(numerosOrdenados))+" ]");
            var encontrado = Busca.BuscaBinaria(numerosOrdenados, Integer.parseInt(txtBusca.getText()));
-           this.lblEncontrado.setText(Integer.toString(encontrado));
+           if (encontrado.getResultado() != null) this.lblEncontrado.setText(encontrado.getResultado());
+           
        }
+       }
+        
+
     }//GEN-LAST:event_jButton3ActionPerformed
  
     private void rSequencialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSequencialActionPerformed
@@ -333,8 +360,8 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.txtConjunto.setText("");
         this.txtBusca.setText("");
+        this.lblVetor.setText("[ ]");
         this.lblEncontrado.setText("");
-        this.lblIndice.setText("");
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -348,9 +375,15 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rBinarioActionPerformed
 
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        this.txtConjunto.setText(LerValores.GerarValores());
+    }//GEN-LAST:event_jButton8ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -358,9 +391,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
@@ -369,9 +402,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblEncontrado;
-    private javax.swing.JLabel lblIndice;
     private javax.swing.JLabel lblResultado;
+    private javax.swing.JLabel lblVetor;
     private javax.swing.JRadioButton rBinario;
     private javax.swing.JRadioButton rBubble;
     private javax.swing.JRadioButton rCountingSort;

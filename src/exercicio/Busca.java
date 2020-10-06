@@ -16,35 +16,34 @@ public class Busca {
     public static BuscaViewResult BuscaSequencial(String[]numeros, String buscarNumero){
  
         var buscaViewResult = new BuscaViewResult();
+        buscaViewResult.setResultado("O valor não foi encontrado!");
         for (int i = 0; i < numeros.length; i++){
             if (buscarNumero .equals(numeros [i])){
-                buscaViewResult.setEncontrado("Encontrado!");
-                buscaViewResult.setIndice(Integer.toString(i));                                             
+                buscaViewResult.setResultado("O valor foi encontrado no indice " + Integer.toString(i));
             }            
         }
         return buscaViewResult;
 }
     
-    public static int BuscaBinaria(int[] a, int key) {
-        int begin = 0;
-        int end = a.length - 1;
-        while (begin <= end) {
+    public static BuscaViewResult BuscaBinaria(int[] vetor, int buscar) {
+        var buscaViewResult = new BuscaViewResult();
+        int inicio = 0;
+        int fim = vetor.length - 1;
+        while (inicio <= fim) {
 
-            int middle = (begin + end) / 2;
-            if (key == a[middle]) {
-                return middle;
-            } else if (key > a[middle]) {
-                begin = middle + 1;
+            int meio = (inicio + fim) / 2;
+            if (buscar == vetor[meio]) {
+                buscaViewResult.setResultado("O valor foi encontrado");
+                return buscaViewResult;
+            } else if (buscar > vetor[meio]) {
+                inicio = meio + 1;
             } else {
-                end = middle - 1;
+                fim = meio - 1;
             }
         }
-        return -1;  //Retorna -1 quando não é encontrado.
-    }
-
-        
-        
-    }
+        return buscaViewResult;
+    }        
+}
     
  
     

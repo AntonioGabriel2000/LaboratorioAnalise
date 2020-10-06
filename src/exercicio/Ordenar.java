@@ -5,9 +5,6 @@
  */
 package exercicio;
 
-import java.awt.List;
-import java.util.ArrayList;
-
 /**
  *
  * @author Eduardo Martiniano
@@ -92,7 +89,7 @@ public class Ordenar {
         long tempoInicial = System.nanoTime();
         var intOrdenados = bubbleSort(intNumeros);
         long tempoFinal = System.nanoTime();
-        long tempototal = tempoFinal - tempoInicial;
+        long tempoTotal = tempoFinal - tempoInicial;
         var txtOrdenados = LerValores.ConverterEmString(intOrdenados);
         var resultado = new OrdenacaoViewResult();
         var vetor = "";
@@ -105,7 +102,7 @@ public class Ordenar {
         }
         
         resultado.setNumeros(vetor);
-        resultado.setTempoExecucao(Long.toString(tempoFinal));
+        resultado.setTempoExecucao(Long.toString(tempoTotal));
         return resultado;
     }
     
@@ -115,7 +112,7 @@ public class Ordenar {
         long tempoInicial = System.nanoTime();
         var intOrdenados = selectionSort(intNumeros);
         long tempoFinal = System.nanoTime();
-        long tempototal = tempoFinal - tempoInicial;
+        long tempoTotal = tempoFinal - tempoInicial;
         var txtOrdenados = LerValores.ConverterEmString(intOrdenados);
         var resultado = new OrdenacaoViewResult();
         var vetor = "";
@@ -127,7 +124,7 @@ public class Ordenar {
             vetor = vetor + txtOrdenados[i] + ", ";
         }
         resultado.setNumeros(vetor);
-        resultado.setTempoExecucao(Long.toString(tempoFinal));
+        resultado.setTempoExecucao(Long.toString(tempoTotal));
         return resultado;
     }
     
@@ -145,7 +142,7 @@ public class Ordenar {
         long tempoInicial = System.nanoTime();
         var intOrdenados = insertionSort(intNumeros);
         long tempoFinal = System.nanoTime();
-        long tempototal = tempoFinal - tempoInicial;
+        long tempoTotal = tempoFinal - tempoInicial;
         var txtOrdenados = LerValores.ConverterEmString(intOrdenados);
         var resultado = new OrdenacaoViewResult();
         var vetor = "";
@@ -157,7 +154,7 @@ public class Ordenar {
             vetor = vetor + txtOrdenados[i] + ", ";
         }
         resultado.setNumeros(vetor);
-        resultado.setTempoExecucao(Long.toString(tempoFinal));
+        resultado.setTempoExecucao(Long.toString(tempoTotal));
         return resultado;
     } 
     
@@ -168,7 +165,7 @@ public class Ordenar {
         long tempoInicial = System.nanoTime();
         var intOrdenados = CountingSort(intNumeros);
         long tempoFinal = System.nanoTime();
-        long tempototal = tempoFinal - tempoInicial;
+        long tempoTotal = tempoFinal - tempoInicial;
         var txtOrdenados = LerValores.ConverterEmString(intOrdenados);
         var resultado = new OrdenacaoViewResult();
         var vetor = "";
@@ -180,7 +177,7 @@ public class Ordenar {
             vetor = vetor + txtOrdenados[i] + ", ";
         }
         resultado.setNumeros(vetor);
-        resultado.setTempoExecucao(Long.toString(tempoFinal));
+        resultado.setTempoExecucao(Long.toString(tempoTotal));
         return resultado;
     }
     
